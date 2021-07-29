@@ -1,0 +1,422 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 1000px;
+}
+p{
+    font-weight: 300;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../image/bg.jpg);
+    background-size: cover;
+}
+.banner .container{
+    max-width: 900px;
+    align-items: center;
+    padding: 10px 10px; 
+}
+.banner .container h2{
+    font-size: 4em;
+    color: #fff;
+}
+.banner .container p{
+    color: #fff;
+    font-size: 1.2em;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2304d4;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+    width: 100%;
+    padding: 40px 80px;
+    z-index: 10000;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 90px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+/*=================================================*/
+header.sticky .logo{
+    color: #111;
+}
+header.sticky li a{
+    color: #111;
+}
+header .logo{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color:#fff;
+}
+header .logo:hover{
+    color: #2304d4;
+    transition: .3s;
+}
+header.sticky li a:hover{
+    color: #2304d4;
+    transition: .3s;
+}
+/*=================================================*/
+header .logo span{
+    color: #2304d4;
+    font-size: 1em;
+}
+/*=================================================*/
+.navegacao{
+    position: relative;
+    display: flex;
+}
+.navegacao li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+.navegacao li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.navegacao li a:hover{
+    color: #2304d4;
+    transition: .4s;
+}
+.sobre--nos{
+    padding: 80px 40px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .coluna150{
+    position: relative;
+    width: 48%;  
+}
+.row .coluna150 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+.row .coluna150 .imgBx img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*==================================*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 40px 0;
+    
+}
+.titulo--texto h2{
+    color: #111;
+    font-weight: 300;
+    font-size: 2em;
+}
+.titulo--texto span{
+    color: #2304d4;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.nosso--menu{
+    padding: 100px;
+}
+.nosso--menu .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.nosso--menu .container .box{
+    width: 340px;
+    margin: 20px;
+    border: 14px solid #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08 );
+}
+.nosso--menu .container .box img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.texto h2{
+    padding: 25px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+/*==================================*/
+.funcionarios{
+    padding: 90px;
+}
+.funcionarios .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.funcionarios .container .box{
+    width: 340px;
+    margin: 20px;
+    border: 14px solid #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08 );
+}
+.funcionarios .container .box img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.texto h2{
+    padding: 20px;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+/*==================================*/
+.comentarios{
+    padding: 30px;
+    background: url(../image/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.comentarios .titulo--texto,
+.comentarios .titulo p{
+   color: #fff;
+   margin: 20px 0;
+}
+.comentarios .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.comentarios .container .box{  
+    background: #fff;
+    width: 340px;
+    margin: 20px ;
+    padding: 80px 40px;
+    border: 2px solid rgba(0,0,0,0.1);
+    
+}
+.comentarios .container .box .imgBx img{
+    position: relative;
+    left: 80px;
+    width: 90px;
+    height: 90px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+/*==================================*/
+.contacto{
+    padding: 50px;
+    background: url(../image/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.formulario--contato{
+    max-width: 500px;
+    padding: 60px 40px;
+    background: #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.4 );
+}
+.formulario--contato h3{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.formulario--contato .input--box{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+   
+}
+.formulario--contato .input--box input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+}
+.formulario--contato .input--box input[type="submit"]{
+    width: 100%;
+    padding: 1em; 
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #2304d4;
+    margin-top: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+.formulario--contato .input--box textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #555;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+.formulario--contato .input--box input[type="submit"]:hover{
+    letter-spacing: 6px;
+    background: #4c2fee;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: #333;
+    font-weight: 300;
+    font-size: 1.2em;
+   border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+
+
+
+@media(max-width:991px){
+    header,
+    header .sticky{
+        padding: 10px 90px;
+    }
+    header .navegacao{
+        display: none;
+    }
+    header .navegacao li{
+       margin-left: 0;
+    }
+    header .navegacao li a{
+        color: #111;
+        font-size: 1.4em;
+        font-weight: 400;
+        
+    }
+    header .navegacao.active{
+        width: 100%;
+        height: calc(100% - 80px);
+        position: fixed;
+        left: 0;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+       
+    }
+    .menuToggle{
+        position: relative;
+        background: url(../image/menu.png);
+        width: 40px;
+        height: 40px;
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: .7s;
+    }
+    .menuToggle.active{ 
+        background: url(../image/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+       
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    .banner .container h2 {
+        font-size: 2em;
+        color: #fff;
+    }
+    .banner .container p {
+        color: #fff;
+        font-size: 1em;
+        display: flex;
+        text-justify:auto;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .coluna150{
+        position: relative;
+        width: 100%;    
+    }
+    .row .coluna150 .imgBx{
+        height: 300px; 
+        margin: 10px 0;
+    }
+    .nosso--menu{
+        padding: 20px;
+    }
+    .funcionarios{
+        padding: 20px;
+    }
+    .contacto{
+        padding: 20px;
+    }
+    .titulo p{
+       text-align: center;
+       justify-content: center;
+       padding: 25px;
+    }
+    .formulario--contato h3{
+        font-size: .7em;
+        font-weight: 700;
+        color: #111;
+    }
+    footer p{
+        justify-content: center;
+        color: #333;
+        font-weight: 700;
+        font-size: .8em;
+       border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    
+}
